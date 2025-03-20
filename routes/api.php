@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 //Public Routes
 Route::get('/home', [ App\Http\Controllers\frontend\HomeController::class, 'index']);
 Route::get('/transactions/latest', [App\Http\Controllers\frontend\HomeController::class, 'getLatestTransactions']);
-
+Route::post('/chatbot', [App\Http\Controllers\frontend\ChatbotController::class, 'chat'])->name('chatbot');
 //Auth Routes
 Route::get('/verify', [App\Http\Controllers\auth\authCheckController::class, 'verify']);
 Route::get('/checkUser', [App\Http\Controllers\auth\authCheckController::class, 'checkClient']);

@@ -1,4 +1,7 @@
-     <!-- Footer Start -->
+      <!-- The Chatbot -->
+      @include('frontend.chatbot')
+       <!-- The end of chatbot -->
+    <!-- Footer Start -->
      <footer class="footer-area">
             <div class="main-footer">
                 <div class="container">
@@ -6,7 +9,7 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="single-widget pr-60">
                             <div class="footer-logo pb-25">
-                                    <h2 class="text-uppercase" style="color: #ec1c23; font-size: 22px; font-weight: 600;">E-Learning</h2>
+                                    <h2 class="text-uppercase" style="color: #ec1c23; font-size: 22px; font-weight: 600;">EduNet</h2>
                                 </div>
                                 <p>
                                     Discover the joy of learning with our interactive platform. Explore courses, connect with expert instructors, and achieve your educational goals from anywhere.
@@ -26,8 +29,6 @@
                                 <ul>
                                     <li><a >addmission</a></li>
                                     <li><a >Academic Calender</a></li>
-                                    <li><a >Event List</a></li>
-                                    <li><a>Hostel &amp; Dinning</a></li>
                                     <li><a >TimeTable</a></li>
                                 </ul>
                             </div>
@@ -37,10 +38,9 @@
                                 <h3>useful links</h3>
                                 <ul>
                                     <li><a href="{{route('courses')}}">our courses</a></li>
-                                    <li><a >about us</a></li>
-                                    <li><a >teachers &amp; faculty</a></li>
-                                    <li><a >teams &amp; conditions</a></li>
-                                    <li><a >our events</a></li>
+                                    <li><a  href="{{route('home')}}" >Home</a></li>
+                                    <li><a  href="{{route('login')}}">login</a></li>
+                                    <li><a  href="{{route('register')}}">sign up</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                                 <h3>get in touch</h3>
                                 <p>Godfrey Okoye University, Thinkers Corner, Enugu, Nigeria</p>
                                 <p>+234 577859 5236</p>
-                                <p>info@E-Learning.com</p>
+                                <p>info@EduNet.com</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <p>Copyright © <a href="index.html">E-Learning Platform</a> 2024. All Right Reserved</p>
+                            <p>Copyright © <a href="index.html">EduNet Platform</a> 2024. All Right Reserved</p>
                         </div> 
                     </div>
                 </div>    

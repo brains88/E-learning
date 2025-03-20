@@ -11,7 +11,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $courses = Course::paginate(3); // Fetch courses with pagination (6 per page)
+        $courses = Course::paginate(6); // Fetch courses with pagination (6 per page)
         return view('frontend.home', compact('courses'));
     }
  

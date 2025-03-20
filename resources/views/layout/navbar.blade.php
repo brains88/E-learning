@@ -104,7 +104,7 @@
                 <!-- Left Section -->
                 <div class="col-md-8 col-sm-8">
                     <div class="header-top-left">
-                        <h2 class="text-uppercase">E-Learning</h2>
+                        <h2 class="text-uppercase">EduNet</h2>
                     </div>
                 </div>
                 <!-- Right Section -->

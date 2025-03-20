@@ -6,7 +6,7 @@ Route::get('/', [App\Http\Controllers\frontend\HomeController::class, 'index'])-
 Route::get('/courses', [App\Http\Controllers\frontend\CoursesController::class, 'index'])->name('courses.index'); // Display courses list // Show course details in a modal (Optional)
 Route::post('/enroll/{courseId}', [App\Http\Controllers\frontend\CoursesController::class, 'enroll'])->name('enroll');
 Route::get('/my-courses/{course}', [App\Http\Controllers\user\CoursesController::class, 'show'])->name('course.details');
-
+Route::post('/chatbot', [App\Http\Controllers\frontend\ChatbotController::class, 'chat'])->name('chatbot');
 //Auth Routes
 Route::get('/login', [App\Http\Controllers\auth\LoginController::class, 'index'])->name('login');
 Route::post('/login', [App\Http\Controllers\auth\LoginController::class, 'login'])->name('login');

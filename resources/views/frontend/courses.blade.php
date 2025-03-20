@@ -20,14 +20,6 @@
                 @foreach($courses as $course)
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="single-course" id="courseCard{{ $course->id }}">
-                        <div class="course-img">
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#courseModal{{ $course->id }}">
-                                <img src="{{ asset('storage/courses/images/' . $course->course_image) }}" alt="course" style="height:200px; object-fit:cover;">
-                                <div class="course-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
                         <div class="course-content">
                             <h3><a href="javascript:void(0)" data-toggle="modal" data-target="#courseModal{{ $course->id }}">{{ $course->title }}</a></h3>
                             <p>{{ Str::limit($course->description, 100) }}</p>

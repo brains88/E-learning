@@ -18,7 +18,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-5 col-6">
                         <div class="header-top-left mt-4">
-                        <h2 class="text-uppercase">E-Learning</h2>
+                        <h2 class="text-uppercase">EduNet</h2>
                     </div>
 						</div>
 						<div class="col-md-9 col-sm-7 col-6">

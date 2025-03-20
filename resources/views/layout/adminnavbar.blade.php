@@ -100,7 +100,7 @@
 
 <div class="hamburger" onclick="toggleSidebar()">☰</div>
 <div class="sidebar" id="sidebar">
-  <h2 class="mt-4">E-Learning</h2>
+  <h2 class="mt-4">EduNet</h2>
   <ul>
     <li><a href="{{route('admin.dashboard')}}" class="{{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"><i class="fa fa-home"></i> Dashboard</a></li>
     <li><a href="{{route('admin.students')}}" class="{{ request()->routeIs('admin.students') ? 'active' : '' }}"><i class="fa fa-user"></i>Students</a></li>

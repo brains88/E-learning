@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center">
-                <img src="assets/img/login.jpg" alt="login Image" style="width:100%; height:100%">
+                <img src="assets/img/slider/slider1.jpg" alt="login Image" style="width:100%; height:100%">
             </div>
             <div class="col-md-6 text-center">
                 <div class="login">

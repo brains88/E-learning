@@ -5,7 +5,7 @@
     <section id="slider-container" class="slider-area two"> 
     <div class="slider-owl owl-theme owl-carousel"> 
         <!-- Start Single Slide -->
-        <div class="single-slide item" style="background-image: url(assets/img/slider/slider2.jpg)">
+        <div class="single-slide item" style="background-image: url(assets/img/slider/slider1.jpg)">
             <div class="slider-content-area">  
                 <div class="container">
                     <div class="row">
@@ -25,7 +25,7 @@
         <!-- End Single Slide -->
 
         <!-- Start Single Slide -->
-        <div class="single-slide item" style="background-image: url(assets/img/slider/slider3.jpg)">
+        <div class="single-slide item" style="background-image: url(https://www.edpost.com/hubfs/Imported_Blog_Media/AdobeStock_382408153-880x393-1.jpg)">
             <div class="slider-content-area">   
                 <div class="container">
                     <div class="row">
@@ -45,7 +45,7 @@
         <!-- End Single Slide -->
 
         <!-- Start Single Slide -->
-        <div class="single-slide item" style="background-image: url(assets/img/slider/slider1.jpg)">
+        <div class="single-slide item" style="background-image: url(https://media.istockphoto.com/id/1588289977/photo/happy-black-females-student-during-a-class-in-lecture-hall-looking-at-camera.jpg?s=612x612&w=0&k=20&c=o2l4DsMWHhZ3Oqq8hxrGoKqJfC1S2kAfnjUHlRJuD-k=)">
             <div class="slider-content-area">  
                 <div class="container">
                     <div class="row">
@@ -102,7 +102,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="about-content">
-                            <h2>WELCOME TO <span class="text-uppercase">E-Learning</span></h2>
+                            <h2>WELCOME TO <span class="text-uppercase">EduNet</span></h2>
                             <p>I must explain to you how all this mistaken idea of denouncing pleure and prsing pain was born and I will give you a complete account of the system, and expound the actual teachings  the master-builder of humanit happiness</p>
                             <p class="hidden-sm">I must explain to you how all this mistaken idea of denouncing pleure and prsing pain was born and I will give you a complete account of the system</p>
                             <a class="default-btn" href="{{route('courses')}}">view courses</a>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="about-img">
-                            <img src="assets/img/about/about.png" alt="about">
+                            <img src="https://www.edpost.com/hubfs/Imported_Blog_Media/AdobeStock_382408153-880x393-1.jpg" alt="about">
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                     <div class="col-12">
                         <div class="section-title">
                             <img src="assets/img/icon/section1.png" alt="section-title">
-                            <h2>COURSES WE OFFER</h2>
+                            <h2>AVAILABLE COURSES TO ENROLL</h2>
                         </div>
                     </div>
                 </div>
@@ -133,14 +133,6 @@
                 @foreach($courses as $course)
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="single-course" id="courseCard{{ $course->id }}">
-                        <div class="course-img">
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#courseModal{{ $course->id }}">
-                                <img src="{{ asset('storage/courses/images/' . $course->course_image) }}" alt="course" style="height:200px; object-fit:cover;">
-                                <div class="course-hover">
-                                    <i class="fa fa-link"></i>
-                                </div>
-                            </a>
-                        </div>
                         <div class="course-content">
                             <h3><a href="javascript:void(0)" data-toggle="modal" data-target="#courseModal{{ $course->id }}">{{ $course->title }}</a></h3>
                             <p>{{ Str::limit($course->description, 100) }}</p>
@@ -175,90 +167,7 @@
             </div>
         </section>
         <!-- Notice End -->
-        <!-- Event Area Start -->
-        <div class="event-area two text-center pt-100 pb-145">
-            <div class="container">
-                <div class="row">
-                     <div class="col-12">
-                        <div class="section-title">
-                            <img src="assets/img/icon/section.png" alt="section-title">
-                            <h2>UPCOMMING EVENTS</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="single-event mb-35">
-                            <div class="event-img">
-                                <a href="event-details.html"><img src="assets/img/event/event1.jpg" alt="event"></a>
-                            </div>
-                            <div class="event-content text-start">
-                                <h3>20 June 2022</h3>
-                                <h4><a href="event-details.html">ADVANCE PHP WORKSHOP</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-event mb-35 mb-md-0">
-                            <div class="event-img">
-                                <a href="event-details.html"><img src="assets/img/event/event3.jpg" alt="event"></a>
-                            </div>
-                            <div class="event-content text-start">
-                                <h3>16 June 2022</h3>
-                                <h4><a href="event-details.html">learning english history</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-event mb-35">
-                            <div class="event-img">
-                                <a href="event-details.html"><img src="assets/img/event/event2.jpg" alt="event"></a>
-                            </div>
-                            <div class="event-content text-start">
-                                <h3>18 June 2022</h3>
-                                <h4><a href="event-details.html">DIGITAL MARKETING ANALYSIS</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-event">
-                            <div class="event-img">
-                                <a href="event-details.html"><img src="assets/img/event/event3.jpg" alt="event"></a>
-                            </div>
-                            <div class="event-content text-start">
-                                <h3>14 June 2022</h3>
-                                <h4><a href="event-details.html">UI & UX DESIGNER MEETUP</a></h4>
-                                <ul>
-                                    <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                    <li><i class="fa fa-map-marker"></i>New Yourk City</li>
-                                </ul>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Event Area End -->
+
          @include('layout.footer')
          
          <script>
